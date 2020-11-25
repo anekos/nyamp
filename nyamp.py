@@ -52,7 +52,7 @@ def proxy(url):
     if content_type is not None:
         response.content_type = content_type
 
-    with open(content_path) as f:
+    with open(content_path, 'rb') as f:
         return f.read()
 
 def main(cache='/tmp/nyamp', debug=False, port=8080, reloader=False):
