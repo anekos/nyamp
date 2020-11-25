@@ -60,7 +60,7 @@ def main(cache='/tmp/nyamp', debug=False, port=8080, reloader=False):
     CacheDir = cache
     if not os.path.exists(CacheDir):
         os.makedirs(CacheDir)
-    run(host='localhost', port=8080, debug=debug, reloader=reloader)
+    run(host='0.0.0.0', port=8080, debug=debug, reloader=reloader)
 
 if __name__ == '__main__':
     import fire
